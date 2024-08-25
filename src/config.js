@@ -1,0 +1,1 @@
+export const BACKEND_URL = "https://daily-blogger-c4jx.onrender.com/";
