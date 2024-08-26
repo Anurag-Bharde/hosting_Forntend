@@ -53,6 +53,7 @@ function AppBar({post,setPost,fetchPosts}){
     <Routes>
     {/* <Route path='/' element={<Home />} /> */}
         <Route path='/' element={<Signin />} />
+        <Route path='/signin' element={<Signin />} />
         <Route path='/SignUp' element={<Signup />}/>
         <Route path="/PostBlog" element={<AuthCheck> <Suspense fallback={"loading..."}><PostBlog post={post} setPost={setPost} fetchPosts={fetchPosts}/></Suspense> </AuthCheck>} />
         <Route path='/BlogList' element={<AuthCheck><BlogList post={post} fetchPosts={fetchPosts} /> </AuthCheck>} />

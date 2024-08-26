@@ -13,12 +13,11 @@ export const AuthCheck = ({ children }) => {
                 const response = await axios.get(`${BACKEND_URL}user`, {
                     withCredentials: true,
                 });
-                console.log(response)
                 setIsAuthenticated(true);
             } catch (error) {
                 setIsAuthenticated(false);
                 alert("Bad request: please login again")
-                navigate("/"); 
+                navigate("/signin"); 
             }
         };
 
