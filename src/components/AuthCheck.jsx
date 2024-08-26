@@ -17,7 +17,7 @@ export const AuthCheck = ({ children }) => {
             } catch (error) {
                 setIsAuthenticated(false);
                 alert("Bad request: please login again")
-                navigate("/signin"); 
+                navigate("/"); 
             }
         };
 
