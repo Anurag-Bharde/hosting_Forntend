@@ -13,6 +13,7 @@ export const AuthCheck = ({ children }) => {
                 const response = await axios.get(`${BACKEND_URL}user`, {
                     withCredentials: true,
                 });
+                console.log(response)
                 setIsAuthenticated(true);
             } catch (error) {
                 setIsAuthenticated(false);
