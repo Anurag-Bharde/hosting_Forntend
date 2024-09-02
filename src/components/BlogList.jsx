@@ -104,22 +104,22 @@ export function BlogList({ post, fetchPosts }) {
 
         {/* Icon buttons at the bottom */}
         <div className="flex flex-col items-center gap-6 mb-6">
-        <a href="https://www.zuai.co/dashboard" target="_blank">
+        <a href="">
           <button className="p-2 bg-slate-50 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full">
             <img src={a} alt="Icon 1" className=" w-6 h-6" />
           </button>
           </a>
-          <a href="https://www.zuai.co/subject?type=library" target="_blank">
+          <a href="">
           <button className="p-2 bg-slate-50 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full">
             <img src={b} alt="Icon 2" className="w-6 h-6" />
           </button>
           </a>
-          <a href="https://www.zuai.co/subject?type=question-bank" target="_blank">
+          <a href="">
           <button className="p-2 bg-slate-50 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full">
             <img src={c} alt="Icon 3" className="w-6 h-6" />
           </button>
             </a>
-          <a href="https://www.zuai.co/subject?type=mock-exam" target="_blank">
+          <a href="">
           <button className="p-2 bg-slate-50 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full">
             <img src={d} alt="Icon 4" className="w-6 h-6" />
           </button>
@@ -132,9 +132,7 @@ export function BlogList({ post, fetchPosts }) {
         {/* Navigation Bar */}
         <nav className="bg-gray-100 p-4 border-2 rounded-full mb-2 transition-all duration-200 ease-out hover:shadow-[0_0_6px_#23adff]">
           <div className="container mx-auto flex justify-between items-center">
-            <a href="https://www.zuai.co/" target="_blank">
-              <img src={image} className="h-9" />
-            </a>
+          <h4 className="font-sans">Hello {username}</h4>
             <form onSubmit={handleSearch} className="flex items-center">
               <input
                 type="text"
@@ -152,7 +150,7 @@ export function BlogList({ post, fetchPosts }) {
             </form>
             <div className="flex items-center gap-4">
 
-            <h4 className="font-sans">Hello {username}</h4>
+            
             <button
               className="rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               onClick={() => LogoutFunc()}
