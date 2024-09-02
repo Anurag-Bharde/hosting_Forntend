@@ -104,22 +104,22 @@ export function BlogList({ post, fetchPosts }) {
 
         {/* Icon buttons at the bottom */}
         <div className="flex flex-col items-center gap-6 mb-6">
-        <a href="">
+        <a>
           <button className="p-2 bg-slate-50 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full">
             <img src={a} alt="Icon 1" className=" w-6 h-6" />
           </button>
           </a>
-          <a href="">
+          <a>
           <button className="p-2 bg-slate-50 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full">
             <img src={b} alt="Icon 2" className="w-6 h-6" />
           </button>
           </a>
-          <a href="">
+          <a >
           <button className="p-2 bg-slate-50 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full">
             <img src={c} alt="Icon 3" className="w-6 h-6" />
           </button>
             </a>
-          <a href="">
+          <a >
           <button className="p-2 bg-slate-50 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full">
             <img src={d} alt="Icon 4" className="w-6 h-6" />
           </button>
